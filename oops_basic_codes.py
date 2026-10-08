@@ -11,11 +11,11 @@ class student:
     name=""
     age=0
 s1=student()
-s1.name="pavani"
-s1.age=22
+s1.name="Rahul"
+s1.age=20
 s2=student()
-s2.name="Ravi"
-s2.age=29
+s2.name="Priya"
+s2.age=21
 print(s1.name,s1.age)
 print(s2.name,s2.age)
 # 2. Employee Class
