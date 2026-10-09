@@ -23,18 +23,20 @@ print(s2.name,s2.age)
 # name
 # salary
 # Create three employee objects and display their details.
-class employee:
-    name=""
-    salary=0
-e1=employee()
-e1.name="pavani"
-e1.salary=20000
-e2=employee()
-e2.name="pavani"
-e2.salary=20000
-e3=employee()
-e3.name="pavani"
-e3.salary=20000
+class Employee:
+    name = ""
+    salary = 0
+
+
+e1 = Employee()
+e1.name = "Pavani"
+e1.salary = 20000
+e2 = Employee()
+e2.name = "Srinu"
+e2.salary = 25000
+e3 = Employee()
+e3.name = "Krishna"
+e3.salary = 30000
 print(e1.name,e1.salary)
 print(e2.name,e2.salary)
 print(e3.name,e3.salary)
@@ -44,18 +46,20 @@ print(e3.name,e3.salary)
 # model
 # price
 # Create two objects and print their details.
-class car:
-    brand=""
-    model=""
-    price=0
-c1=car()
-c2=car()
-c1.brand="Tata"
-c1.model="maruthi"
-c1.price=2000000
-c2.brand="Benz"
-c2.model="maruthi"
-c2.price=200000000
+class Car:
+    brand = ""
+    model = ""
+    price = 0
+
+
+c1 = Car()
+c2 = Car()
+c1.brand = "Tata"
+c1.model = "Maruti"
+c1.price = 2000000
+c2.brand = "Benz"
+c2.model = "Maruti"
+c2.price = 200000000
 print(c1.brand,c1.model,c1.price)
 print(c2.brand,c2.model,c2.price)
 # Level 2 — Constructor + Instance Variables
@@ -65,14 +69,14 @@ print(c2.brand,c2.model,c2.price)
 # branch
 # age
 # Create three students and display their details.
-class student():
+class Student:
     def __init__(self,name,branch,age):
         self.name=name
         self.branch=branch
         self.age=age
-s1=student("pavani","ECT",22)
-s2=student("Srinu","mech",22)
-s3=student("Krishna","tech",22)
+s1=Student("Pavani","ECT",22)
+s2=Student("Srinu","Mech",22)
+s3=Student("Krishna","Tech",22)
 print(s1.name,s1.branch,s1.age)
 print(s2.name,s2.branch,s2.age)
 print(s3.name,s3.branch,s3.age)
@@ -89,14 +93,16 @@ print(s3.name,s3.branch,s3.age)
 
 # Output:
 # Area = 50
-class rectangle:
+class Rectangle:
     def __init__(self,length,breadth):
         self.l=length
         self.b=breadth
     def area(self):
-        print(self.l*self.b)
-# a=rectangle(2,3)
-# a.area()
+        return self.l*self.b
+
+
+a = Rectangle(10, 5)
+print("Area =", a.area())
 # 6. Bank Account
 # Create a class BankAccount with:
 # account holder name
